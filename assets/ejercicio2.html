@@ -2,14 +2,26 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="txt/css" href="ejercicio2.css">
     <title></title>
   </head>
   <body>
-    <input name="farenheit" id="farenheit" type="text" value="23"/>
-    <button type="button" onclick="convertirCelsius (); return false">Convert to celsius</button><br>
-    <input name="celsius" id="celsius" type="text" value="-5"/>
-    <button type="button" onclick="convertirCelsius (); return false">Convert to celsius</button
-      <script src="ejercicio2.js"></script>
-    </body>
+    <h1 align="center" >Convertidor</h1>
+  <table border="solid" align="center">
+    <tr>
+      <th>celsius</th>
+      <th><input type="number" id="celsius"> </th>
+      <th><button onclick="convertirFarenheit()">convertir a farenheit</button></th>
+    </tr>
+    <tr>
+      <th>farenheit</th>
+      <th><input type="number" id="farenheit"> </th>
+      <th><button onclick="convertirCelsius()">convertir a celsius</button></th>
+    </tr>
 
+  </table>
+
+
+    <script src="ejercicio2.js"></script>
+  </body>
 </html>
